@@ -1,0 +1,141 @@
+/* ====================================
+    BRAND LOGOS
+   ==================================== */
+  // Logo for login and loading
+  // this logo is required!
+
+  @brand-logo-img: 'adamos-logo.svg';
+  @brand-logo-height: 20%; // percentage - height / width * 100
+  // ---
+
+  // when set replaces the app icon in navigator.
+  // should be 230px wide.
+  @appLogo:  "@{image-path}adamos-logo-nav.svg";
+  @appLogo-height: 24%; // percentage - height / width * 100
+
+
+  // when set adds an image below login form.
+  //As an example, check Trakerando branding
+  @powered-by: "";
+
+
+
+/* ====================================
+    COLORS
+   ==================================== */
+  @brand-color:                 #00B4CD; // main color - replace with your brand color
+
+  @brand-primary:               @brand-color;
+  @brand-complementary:         #B9E0E3;
+  @brand-primary-light:         #B9E0E3;
+
+  // status colors
+  @brand-success:               #6BB324;
+  @brand-info:                  #5bc0de;
+  @brand-warning:               #FECB00;
+  @brand-danger:                #D90000;
+  @danger:                      #D90000;
+  @warning:                     #FDC000;
+  @dark-warning:                #FF8000;
+  @success:                     #5cb85c;
+
+  // grays
+  @gray-text:                   #383838;
+  @gray-darker:                 #1D1D1B;
+  @gray-dark:                   #212121;
+  @gray-medium-dark:            #49595B;
+  @gray-medium:                 #858585;
+  @gray:                        #757575;
+  @gray-light:                  #dcdcdc;
+  @gray-lighter:                #f8f8f8;
+  @gray-white:                  #fcfcfc;
+  @text-muted:                  @gray;
+
+
+  // Add user
+  @quickLinkColorA: tint(@brand-primary, 10%);
+  // Add device link / Add asset link
+  @quickLinkColorB: tint(@brand-primary, 30%);
+  // Device link
+  @quickLinkColorC: tint(@brand-complementary, 10%);
+  // Device management
+  @quickLinkColorD: tint(@brand-primary, 50%);
+  // Cockpit
+  @quickLinkColorE: tint(@brand-primary, 70%);
+  // Help & Service
+  @quickLinkColorF: tint(@brand-complementary, 20%);
+  //Change the following if you want the quick-links change color on hover
+  @quickLinkHoverColorChange: false;
+  //Add the following if the above rule is set to true
+  @quickLinkHoverColor: #000;
+
+  // page background color - always use a light background
+  @body-background-color:       #f9f9f9;
+
+
+
+/* ====================================
+    HEADER BAR
+   ==================================== */
+
+  @headerColor:                 white;
+  @header-text-color:           @gray-medium-dark;
+  @header-text-color-hover:     @brand-primary;
+  @header-active-color:         darken(@gray-medium-dark, 15%);
+
+
+
+/* ====================================
+    NAVIGATOR
+   ==================================== */
+  @navColor:                   @gray-darker;
+  @navColorHeader:             transparent;
+  @navigator-title-color:      white;
+  @navigator-text-color:       white;
+  @navigator-separator-color:  fade(white, 5%);
+  @navigator-font-family:      @headings-font-family;
+  @navigator-font-size:        14px;
+  @navigator-active-color:     white;
+  @navigator-active-bg:        #B9E0E3;
+
+  // when set adds a vertical gradient in the navigator background
+  @grad-top:                     "";
+  @grad-bottom:                  "";
+
+
+/* ====================================
+    TYPOGRAPHY
+   ==================================== */
+  // if you're loading fonts from a local directory
+  @import "fonts.less";
+
+
+  @font-family-sans-serif:       Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  @font-family-base:             @font-family-sans-serif;
+  @headings-font-family:         @font-family-sans-serif;
+
+
+
+/* ====================================
+    BUTTONS
+   ==================================== */
+  @btn-border-radius-base:       4px;
+  @btn-border-radius-large:      @btn-border-radius-base;
+  @btn-border-radius-small:      @btn-border-radius-base;
+  @btn-shadow: none;
+
+
+
+/* ====================================
+    COMPONENTS
+   ==================================== */
+  @spinner-color:               @brand-primary;
+  @link-color:                  @brand-primary;
+  @link-hover-color:            darken(@link-color, 15%);
+  @input-focus-color:           #B9E0E3;
+
+  @pulse-color:                 @brand-success;
+
+  @progress-bar-info-bg:        @brand-primary;
+
+  @import "overrides.less";

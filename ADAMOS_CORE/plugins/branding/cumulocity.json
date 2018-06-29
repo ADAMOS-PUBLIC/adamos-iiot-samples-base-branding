@@ -1,0 +1,12 @@
+{
+  "name": "basebranding",
+  "category": "Branding",
+  "description": "ADAMOS Base Branding",
+  "copy": [
+    "img/*",
+    "fonts/*"
+  ],
+  "less": [
+    "branding.less"
+  ]
+}

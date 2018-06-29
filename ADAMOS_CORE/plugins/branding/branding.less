@@ -1,0 +1,39 @@
+@import "../../node_modules/cumulocity-ui-build/__baseBranding__/variables/index.less";
+@import "variables/index.less";
+@import "../../node_modules/cumulocity-ui-build/__baseBranding__/export.less";
+
+
+.btn{
+  .box-shadow(none);
+}
+
+.btn-link{
+  color: @brand-primary;
+  &:hover{
+    color: darken(@brand-primary, 10%);
+  }
+}
+
+.navigator .title{
+  .c8y-icon-administration:before{
+    background-image: none;
+    content: "\f101";
+  }
+  .c8y-icon-cockpit:before {
+    content: "\f108";
+    background-image: none;
+  }
+  .c8y-icon-device-management:before {
+    content: "\f110";
+    background-image: none;
+  }
+}
+
+.navigatorContent .children li > .link{
+  padding-top: 4px;
+}
+
+.badge{
+  vertical-align: baseline;
+  padding: 1px 4px 1px;
+}

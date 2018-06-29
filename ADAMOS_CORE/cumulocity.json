@@ -1,0 +1,11 @@
+{
+  "name": "ADAMOS Base Branding",
+  "availability": "PRIVATE",
+  "contextPath": "adamos",
+  "key": "adamos-appkey",
+  "resourcesUrl": "/",
+  "type": "HOSTED",
+  "tabsHorizontal": true,
+  "imports": [
+  ]
+}
